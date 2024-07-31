@@ -2,6 +2,7 @@
   --clr-primary-600: #1f2937;
 
   --clr-accent-400: #3882f6;
+  --clr-accent-500: #235fc0;
 
   --clr-neutral-0: #fff;
   --clr-neutral-100: #f9faf8;
@@ -155,9 +156,27 @@ body {
   padding-block: 1em;
 }
 
+@media (width > 640px) {
+  .primary-header {
+    padding-block: 1.75em;
+  }
+}
+
 .intro {
   padding-block-start: 1.25em;
   padding-block-end: 2em;
+}
+
+@media (width > 640px) {
+  .intro {
+    padding-block-end: 3em;
+  }
+}
+
+@media (width > 1024px) {
+  .intro {
+    padding-block-start: 3em;
+  }
 }
 
 .intro img {
@@ -177,12 +196,30 @@ body {
   padding-inline: 1em;
 }
 
+@media (width > 640px) {
+  .testimonials {
+    padding-block: 2.5em;
+  }
+}
+
+@media (width > 1024px) {
+  .testimonials {
+    padding-block: 4em;
+  }
+}
+
 .cta {
   background-color: var(--clr-accent-400);
   padding-block: 2em;
   padding-inline: 1em;
   margin-block: 2em;
   border-radius: 0.5rem;
+}
+
+@media (width > 1024px) {
+  .cta {
+    padding-block: 3em;
+  }
 }
 
 /* button */
@@ -193,11 +230,23 @@ body {
   padding: 0.5em 2em;
   border-radius: 0.35rem;
   border: 2px solid var(--clr-accent-400);
+  transition: background-color ease-in-out 200ms;
+  transition: color ease-in-out 200ms;
+}
+
+.btn:is(:hover, :focus-within) {
+  border-color: var(--clr-accent-500);
+  background-color: var(--clr-accent-500);
 }
 
 .btn-transparent {
   background-color: transparent;
   border-color: white;
+}
+
+.btn-transparent:is(:hover, :focus-within) {
+  color: var(--clr-accent-400);
+  background-color: #fff;
 }
 /* utilities */
 
@@ -205,6 +254,18 @@ body {
   display: flex;
   gap: 1em;
   flex-direction: column;
+}
+
+@media (width > 1024px) {
+  .even-columns {
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .even-columns > * {
+    flex-basis: 100%;
+  }
 }
 
 .grid-container {
@@ -218,11 +279,11 @@ body {
 }
 
 .wrapper-lg {
-  width: min(100% - 2rem, 1200px);
+  width: min(100% - 2.5rem, 1360px);
   margin-inline: auto;
 }
 
 .wrapper-sm {
-  width: min(100% - 2rem, 900px);
+  width: min(100% - 2.5rem, 900px);
   margin-inline: auto;
 }

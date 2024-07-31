@@ -28,10 +28,12 @@
         <div class="wrapper-lg">
           <div class="even-columns">
             <div class="flow | max-lg:text-center">
-              <h1 class="font-bold text-2xl text-white tracking-tight">
+              <h1
+                class="font-bold text-2xl text-white tracking-tight sm:text-3xl lg:text-4xl xl:text-[3rem]"
+              >
                 This website is awesome
               </h1>
-              <p>
+              <p class="max-w-[60ch] max-lg:mx-auto">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Consectetur magnam molestias, accusantium minima quas molestiae.
               </p>
@@ -42,14 +44,17 @@
               <img
                 src="./assets/images/walmart.jpg"
                 alt="image of the interior of walmart"
+                class="max-h-[500px] w-full object-cover"
               />
             </picture>
           </div>
         </div>
       </section>
-      <section class="text-clr-primary-600 text-center py-6">
-        <div class="wrapper-sm space-y-4">
-          <h2 class="font-bold text-lg">Some random information.</h2>
+      <section class="text-clr-primary-600 text-center py-6 sm:py-10 lg:py-16">
+        <div class="wrapper-sm space-y-4 sm:space-y-6 lg:space-y-10">
+          <h2 class="font-bold text-lg sm:text-2xl lg:text-3xl">
+            Some random information.
+          </h2>
           <div class="grid-container">
             <div>
               <div class="box"></div>
@@ -75,13 +80,15 @@
           <!--Added this extra div so that if I have to get two testimonials next
           to one another I can use display flex on it-->
           <div>
-            <div class="testimonial space-y-3">
-              <p class="text-2xl font-light italic">
+            <div class="testimonial space-y-3 sm:space-y-4">
+              <p class="text-2xl font-light italic lg:text-3xl">
                 This is an inspiring quote, or a testimonial from a customer.
                 Maybe it's just filling up space, or maybe people will actually
                 read it. Who knows? All I know is that it looks nice.
               </p>
-              <h3 class="text-right font-bold">-Thor, God of thunder</h3>
+              <h3 class="text-right font-bold lg:text-xl">
+                -Thor, God of thunder
+              </h3>
             </div>
           </div>
         </div>
@@ -90,8 +97,10 @@
         <section class="cta">
           <div class="wrapper-sm">
             <div class="flex flex-col gap-4">
-              <div>
-                <h3 class="font-bold text-xl">Call to action! It's time!</h3>
+              <div class="lg:space-y-2">
+                <h3 class="font-bold text-xl sm:text-2xl lg:text-3xl">
+                  Call to action! It's time!
+                </h3>
                 <p>
                   Sign up for our product by clicking that button right over
                   there!
@@ -105,7 +114,7 @@
         </section>
       </div>
     </main>
-    <footer class="bg-clr-primary-600 py-8 text-center">
+    <footer class="bg-clr-primary-600 py-8 text-center sm:py-10">
       <div class="wrapper-lg">
         <p>Copyright © The Odin Project 2021</p>
       </div>
