@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="primary-header">
       <div class="wrapper-lg">
-        <div class="flex">
-          <p>Fashion store</p>
-          <nav>
-            <ul class="flex" role="list">
+        <div class="flex items-center justify-between">
+          <p class="font-medium tracking-tight text-white text-2xl">
+            Fashion store
+          </p>
+          <nav class="max-sm:hidden">
+            <ul class="flex gap-4" role="list">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Support</a></li>
@@ -22,11 +24,13 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="wrapper">
+      <section class="intro">
+        <div class="wrapper-lg">
           <div class="even-columns">
-            <div>
-              <h1>This website is awesome</h1>
+            <div class="flow | max-lg:text-center">
+              <h1 class="font-bold text-2xl text-white tracking-tight">
+                This website is awesome
+              </h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Consectetur magnam molestias, accusantium minima quas molestiae.
@@ -43,10 +47,10 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="wrapper-sm">
-          <h2>Some random information.</h2>
-          <div class="flex">
+      <section class="text-clr-primary-600 text-center py-6">
+        <div class="wrapper-sm space-y-4">
+          <h2 class="font-bold text-lg">Some random information.</h2>
+          <div class="grid-container">
             <div>
               <div class="box"></div>
               <p>this is some random subtext</p>
@@ -66,18 +70,18 @@
           </div>
         </div>
       </section>
-      <section class="testiomonials">
+      <section class="testimonials">
         <div class="wrapper-sm">
           <!--Added this extra div so that if I have to get two testimonials next
           to one another I can use display flex on it-->
           <div>
-            <div class="testimonial">
-              <p>
-                This is an inspiriing quote, or a testimonial from a customer.
+            <div class="testimonial space-y-3">
+              <p class="text-2xl font-light italic">
+                This is an inspiring quote, or a testimonial from a customer.
                 Maybe it's just filling up space, or maybe people will actually
                 read it. Who knows? All I know is that it looks nice.
               </p>
-              <h3>-Thor, God of thunder</h3>
+              <h3 class="text-right font-bold">-Thor, God of thunder</h3>
             </div>
           </div>
         </div>
@@ -85,9 +89,9 @@
       <div class="wrapper-lg">
         <section class="cta">
           <div class="wrapper-sm">
-            <div class="flex">
+            <div class="flex flex-col gap-4">
               <div>
-                <h3>Call to action! It's time!</h3>
+                <h3 class="font-bold text-xl">Call to action! It's time!</h3>
                 <p>
                   Sign up for our product by clicking that button right over
                   there!
@@ -101,7 +105,7 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="bg-clr-primary-600 py-8 text-center">
       <div class="wrapper-lg">
         <p>Copyright © The Odin Project 2021</p>
       </div>
